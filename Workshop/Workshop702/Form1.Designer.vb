@@ -26,6 +26,8 @@ Partial Class Form1
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -38,13 +40,14 @@ Partial Class Form1
         'TextBox2
         '
         Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(50, 106)
+        Me.TextBox2.Location = New System.Drawing.Point(50, 130)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(270, 20)
         Me.TextBox2.TabIndex = 1
         '
         'Button1
         '
+        Me.Button1.Enabled = False
         Me.Button1.Location = New System.Drawing.Point(50, 70)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(132, 23)
@@ -54,6 +57,7 @@ Partial Class Form1
         '
         'Button2
         '
+        Me.Button2.Enabled = False
         Me.Button2.Location = New System.Drawing.Point(188, 70)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(132, 23)
@@ -61,11 +65,33 @@ Partial Class Form1
         Me.Button2.Text = "แปลงเป็นคำไทย"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Enabled = False
+        Me.Button3.Location = New System.Drawing.Point(50, 99)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(132, 23)
+        Me.Button3.TabIndex = 4
+        Me.Button3.Text = "แปลงเป็นคำอังกฤษ"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Enabled = False
+        Me.Button4.Location = New System.Drawing.Point(188, 99)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(132, 23)
+        Me.Button4.TabIndex = 5
+        Me.Button4.Text = "แปลงเป็นคำญี่ปุ่น"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(348, 162)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox2)
@@ -81,4 +107,6 @@ Partial Class Form1
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
 End Class
